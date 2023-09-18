@@ -38,8 +38,8 @@ RUN --mount=type=cache,id=s/cfaf7ed2-171a-4cf4-8c6a-f175f50a42fd-/root/bun,targe
 # If you have a build step for your app, include it here
 RUN npm run build
 
-# Expose the required port (replace 3000 with your app's port if different)
-EXPOSE 3000
+# Expose the required port
+EXPOSE 8080
 
 # Command to run the app
 CMD ["npm", "run", "start"]
