@@ -21,7 +21,7 @@ RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy Nixpacks config
-COPY .nixpacks/nixpkgs-c636fe7908e2b52713ff7c260a9da233effc5b7f.nix .nixpacks/nixpkgs-c636fe7908e2b52713ff7c260a9da233effc5b7f.nix
+# COPY .nixpacks/nixpkgs-c636fe7908e2b52713ff7c260a9da233effc5b7f.nix .nixpacks/nixpkgs-c636fe7908e2b52713ff7c260a9da233effc5b7f.nix
 
 # If you have other Nix related setup, you can include them here
 # ...
