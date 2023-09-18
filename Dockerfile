@@ -39,7 +39,7 @@ RUN --mount=type=cache,id=s/cfaf7ed2-171a-4cf4-8c6a-f175f50a42fd-/root/bun,targe
 RUN npm run build
 
 # Expose the required port
-EXPOSE 8080
+EXPOSE 3000
 
 # Command to run the app
 CMD ["npm", "run", "start"]
