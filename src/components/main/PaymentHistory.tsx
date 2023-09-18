@@ -124,7 +124,7 @@ const PaymentHistory: React.FC<PaymentHistoryProps> = ({user}) => {
                             </div>
                             <div style={styles.flexBetween}>
                                 <span style={styles.textMain}>Loan #{payment.loan_id.toString()}</span>
-                                <span style={styles.textMain}>{payment.created_on.toDateString()}</span>
+                                <span style={styles.textMain}>{new Date(payment.created_on).toDateString()}</span>
                             </div>
                             <div style={styles.flexBetween}>
                                 <span style={styles.textMain}>Amount:</span>

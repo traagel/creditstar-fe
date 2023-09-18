@@ -123,7 +123,8 @@ const LoanHistory: React.FC<LoanHistoryProps> = ({user}) => {
                         <li key={index} style={styles.listItem}>
                             <div style={styles.flexBetween}>
                                 <span style={styles.fontLarge}>Loan #{loan.id}</span>
-                                <span style={styles.textMain}> {loan.created_on.toDateString()}</span>
+                                <span style={styles.textMain}> {new Date(loan.matured_on).toDateString()}</span>
+
                             </div>
                             <div style={styles.flexBetween}>
                                 <span style={styles.textMain}>Amount:</span>
@@ -135,11 +136,12 @@ const LoanHistory: React.FC<LoanHistoryProps> = ({user}) => {
                             </div>
                             <div style={styles.flexBetween}>
                                 <span style={styles.textMain}>Matured On:</span>
-                                <span style={styles.textMain}> {loan.matured_on.toDateString()}</span>
+                                <span style={styles.textMain}> {new Date(loan.matured_on).toDateString()}</span>
                             </div>
                             <div style={styles.flexBetween}>
                                 <span style={styles.textMain}>Updated On:</span>
-                                <span style={styles.textMain}> {loan.updated_on.toDateString()}</span>
+                                <span style={styles.textMain}> {new Date(loan.updated_on).toDateString()}</span>
+
                             </div>
                             <div style={styles.flexBetween}>
                                 <span style={styles.textMain}>Status:</span>
